@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Noto Sans", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #212529;
+  height: 200vh;
+
+}
+
+/* Styling navbar starts */
+.navbar{
+  /* background-color: #212529; */
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+  align-items: center;
+  backdrop-filter: blur(1.2rem);
+  border-bottom: 1px #fff solid;
+  z-index: 1000;
+  top: 0;
+}
+.navbar img{
+  height: 4rem;
+}
+
+.navbar ul{
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+.navbar ul a{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.navbar ul a:hover{
+  background-color: #ff0000;
+}
+/* Styling navbar ends */
+
+/* home starts */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 6rem;
+}
+.content .page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+.content .row{
+  display: flex;
+  height: 70vh;
+  width: 70%;
+  margin: 10vh;
+  backdrop-filter: blur(25px);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+} 
+.content .page .row .post{
+  margin: 5rem 3rem 0 3rem;
+  width: 60%;
+}
+.content .page .row .post .postHead{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .page .row .post .postContent{
+  margin-top: 1.8rem;
+}
+
+.content .row .comments{
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  overflow-y: scroll;
+}
